@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirukkural</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <span><h1> <img src="vallu.png" alt="">  திருக்குறள் <img src="book.png" alt=""></h1></span>
+        <p>The Tirukkuṟaḷ (Tamil: திருக்குறள், lit. 'sacred verses'), or shortly the Kural, is a classic Tamil language text consisting of 1,330 short couplets, or kurals, of seven words each.
+         The text is divided into three books with aphoristic teachings on virtue (aram), wealth (porul) and love (inbam), respectively.</p>
+        </div>
+    <div class="flex-container">
+
+       <div class="box1">
+        <label for="Thirunumber">Enter the Kural No:</label>  
+        <input type="number" id="Thirunumber" class="form-control" placeholder="Enter a number"><br>
+        <button class="btn btn-danger" onclick="kural()">Click here for the explanation</button><br><br>
+        <label for="tamk">Kural in Tamil:</label><br>
+       <textarea name="sect_tamil" id="tamk" cols="10" rows="3" class="form-control kural" disabled></textarea><br>
+       <label for="engk"></label>Kural in English:<br>
+       <textarea name="sect_tamil" id="engk" cols="10" rows="3" class="form-control" disabled></textarea><br>
+       </div>
+       <div class="box2">
+           <section class="tamil">
+           <label for="tamsect">Section name in Tamil:</label><br>
+           <textarea name="sect_tamil" id="tamsect" cols="10" rows="1" class="form-control" disabled></textarea><br>
+           <label for="chapgrp">Chapter group in Tamil:</label><br>
+           <textarea name="sect_tamil" id="chapgrp" cols="10" rows="1" class="form-control" disabled></textarea><br>
+           <label for="tamchap"></label>Chapter name in Tamil:<br>
+           <textarea name="sect_tamil" id="tamchap" cols="10" rows="1" class="form-control" disabled></textarea><br>
+           <label for="tamexp"></label>Explanation in Tamil:<br>
+           <textarea name="sect_tamil" id="tamexp" cols="10" rows="5" class="form-control" disabled></textarea><br>
+           </section>
+       </div>
+       <div class="box3">
+           <section class="english">
+           <label for="engsect">Section name in English:</label><br>
+           <textarea name="sect_eng" id="engsect" cols="10" rows="1" class="form-control" disabled></textarea><br>
+           <label for="echapgrp">Chapter group in English:</label><br>
+           <textarea name="sect_eng" id="echapgrp" cols="10" rows="1" class="form-control" disabled></textarea><br>
+           <label for="engchap">Chapter name in English:</label><br>
+           <textarea name="sect_eng" id="engchap" cols="10" rows="1" class="form-control" disabled></textarea><br>
+           <label for="engexp">Explanation in English:</label><br>
+           <textarea name="sect_eng" id="engexp" cols="10" rows="5" class="form-control" disabled></textarea><br>
+           </section>
+      
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
